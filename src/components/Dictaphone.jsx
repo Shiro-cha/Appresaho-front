@@ -5,8 +5,8 @@ import { KeyboardVoice } from "@mui/icons-material"
 
 function Dictaphone({ socket }) {
     const { transcript, listening, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition()
-    const [user_id] = useState("63515a57c5bea2c4259c97b9")
-    const [room_id] = useState("6351a23f35528899da208e68")
+    const [user_id] = useState("6353c5ebd07fcea9e466074e")
+  const [room_id] = useState("6353c86695db9f31ad0df849")
 
     useEffect(function () {
         socket.emit("msg_send", { user_id: user_id, room_id: room_id, message: transcript })
