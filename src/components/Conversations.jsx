@@ -6,7 +6,7 @@ import ReceiverMessage from './ReceiverMessage';
 import { Box, Avatar, Divider, Tooltip, IconButton, Stack, Typography, TextareaAutosize } from '@mui/material';
 import { Person, Menu, Camera, InsertPhoto, Movie, KeyboardVoice, AttachFile, AddLocation, Send } from '@mui/icons-material';
 
-const socket = io.connect("http://192.168.43.44:3001/");
+const socket = io.connect("http://52.25.112.72:3001/");
 
 //emit get all messages
 
